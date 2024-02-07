@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+ int main(){
+    int i;
+    int x;
+    scanf("%d\n", &x);
+    int y;
+    scanf("%d", &y);
+    int cont;
+
+    while (x<=y){
+        cont = 0;
+        for (i=2; i<=x; i++){
+            if (x%i==0)
+                cont++;
+        }
+        if (cont==1)
+            printf("%d\n", x);
+        x++;
+    }
+    return 0;
+ }
