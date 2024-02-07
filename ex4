@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(){
+    int i;
+    int j;
+    int a;
+    scanf("%d\n", &a);
+    int aeds[a];
+    for (i=0; i<a; i++){
+        scanf("%d\n", &aeds[i]);
+    }
+
+    int b;
+    scanf("%d\n", &b);
+    int calc[b];
+    for (i=0; i<b; i++){
+        scanf("%d", &calc[i]);
+    }
+
+    for (i=0; i<a; i++){
+        for (j=0; j<b; j++){
+            if(aeds[i] == calc[j])
+                printf("%d\n", aeds[i]);
+        }
+    }
+    return 0;
+}
