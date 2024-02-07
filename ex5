@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+    int i;
+    int j;
+    int l;
+    scanf("%d\n", &l);
+    int c;
+    scanf("%d\n", &c);
+    int m[l][c];
+
+    for (i=0; i<l; i++){
+        for (j=0; j<c; j++){
+            scanf("%d", &m[i][j]);
+        }
+    }
+    
+    int ma = m[0][0];
+    for (i=0; i<l; i++){
+        for (j=0; j<c; j++){
+            if (m[i][j] > ma)
+                ma = m[i][j];
+        }
+    }
+    printf("%d\n", ma);
+
+    return 0;
+}
